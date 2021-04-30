@@ -1,0 +1,20 @@
+{
+  "name": "goldenpanda",
+  "version": "BêtaDev 21.11",
+  "description": "Le bot pour le serveur Event Game",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FrankoPaulo",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.7.0",
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.1",
+    "ms": "^2.1.3",
+    "node-pre-gyp": "^0.17.0"
+  }
+}
