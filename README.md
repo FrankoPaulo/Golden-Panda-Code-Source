@@ -71,4 +71,4 @@ Voici la liste des travaux qu'il reste actuellement à faire sur le bot.
 - Version Discord.js : __12.3.1__
 
 ## License
-Ce bot est sous la license __GPL 3.0__. Veuillez voir le fichier <LICENSE> pour avoir plus d'information sur celle-ci. Si vous souhaitez utiliser une partie du code pour vos projet personnel ou public, vous en avez le droit mais n'oubliez pas de me créditer dans ceux-ci.
+Ce bot est sous la license __GPL 3.0__. Veuillez voir le fichier LICENSE pour avoir plus d'information sur celle-ci. Si vous souhaitez utiliser une partie du code pour vos projet personnel ou public, vous en avez le droit mais n'oubliez pas de me créditer dans ceux-ci.
