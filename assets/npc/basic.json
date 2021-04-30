@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Noob",
+    "type": "hostile",
+    "experience": 2,
+    "money": 1,
+    "battlename": "Le No0b",
+    "zone": "Spawn",
+    "attributs": {
+        "hp": 10,
+        "attaque": 1.5,
+        "defense": 0.5,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Bélier",
+    "type": "hostile",
+    "experience": 5,
+    "money": 2,
+    "battlename": "Le Bélier",
+    "zone": "Spawn",
+    "attributs": {
+        "hp": 20,
+        "attaque": 4,
+        "defense": 1,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Livre",
+    "type": "hostile",
+    "experience": 8,
+    "money": 2,
+    "battlename": "Le Livre de Sortilège",
+    "zone": "Spawn",
+    "attributs": {
+        "hp": 24,
+        "attaque": 7,
+        "defense": 2,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "SDF",
+    "type": "hostile",
+    "experience": 15,
+    "money": 3,
+    "battlename": "[BOSS] Le SDF",
+    "zone": "Spawn",
+    "attributs": {
+        "hp": 35,
+        "attaque": 9,
+        "defense": 3,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+
+
+
+
+
+  {
+    "name": "Mouton",
+    "type": "hostile",
+    "experience": 10,
+    "money": 3,
+    "battlename": "Le Mouton Fou",
+    "zone": "Plaine",
+    "attributs": {
+        "hp": 30,
+        "attaque": 21,
+        "defense": 3,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Voleur",
+    "type": "hostile",
+    "experience": 18,
+    "money": 7,
+    "battlename": "Le Voleur",
+    "zone": "Plaine",
+    "attributs": {
+        "hp": 55,
+        "attaque": 31,
+        "defense": 11,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Aventurier",
+    "type": "hostile",
+    "experience": 24,
+    "money": 12,
+    "battlename": "L'Aventurier Farouche",
+    "zone": "Plaine",
+    "attributs": {
+        "hp": 80,
+        "attaque": 33,
+        "defense": 18,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Bandit",
+    "type": "hostile",
+    "experience": 30,
+    "money": 20,
+    "battlename": "Le Bandit",
+    "zone": "Plaine",
+    "attributs": {
+        "hp": 90,
+        "attaque": 36,
+        "defense": 21,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Taureau",
+    "type": "hostile",
+    "experience": 50,
+    "money": 25,
+    "battlename": "[BOSS] Le Taureau Sauvage",
+    "zone": "Plaine",
+    "attributs": {
+        "hp": 100,
+        "attaque": 40.5,
+        "defense": 26,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+
+
+
+
+
+  {
+    "name": "Sanglier",
+    "type": "hostile",
+    "experience": 35,
+    "money": 20,
+    "battlename": "Le Sanglier Volant",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 75,
+        "attaque": 32,
+        "defense": 20,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Champignon",
+    "type": "hostile",
+    "experience": 40,
+    "money": 25,
+    "battlename": "Le Champignon Mutant",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 90,
+        "attaque": 35,
+        "defense": 23,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Brigant",
+    "type": "hostile",
+    "experience": 55,
+    "money": 30,
+    "battlename": "Le Brigant",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 110,
+        "attaque": 40,
+        "defense": 25.5,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Biche",
+    "type": "hostile",
+    "experience": 70,
+    "money": 40,
+    "battlename": "La Biche Mort-Vivante",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 135,
+        "attaque": 40.5,
+        "defense": 28,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Chasseur",
+    "type": "hostile",
+    "experience": 75,
+    "money": 45,
+    "battlename": "Le Chasseur",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 150,
+        "attaque": 30,
+        "defense": 18,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Robin",
+    "type": "hostile",
+    "experience": 90,
+    "money": 60,
+    "battlename": "[BOSS] Robin Hood",
+    "zone": "Forêt",
+    "attributs": {
+        "hp": 200,
+        "attaque": 40,
+        "defense": 25,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Serpent",
+    "type": "hostile",
+    "experience": 70,
+    "money": 40,
+    "battlename": "Le Serpent Venimeux",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 70,
+        "attaque": 45,
+        "defense": 12,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Pilleur",
+    "type": "hostile",
+    "experience": 85,
+    "money": 55,
+    "battlename": "Le Pilleur des Sables",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 140,
+        "attaque": 35,
+        "defense": 17,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Golem",
+    "type": "hostile",
+    "experience": 100,
+    "money": 70,
+    "battlename": "Le Golem de Sable",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 180,
+        "attaque": 40,
+        "defense": 27,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Momie",
+    "type": "hostile",
+    "experience": 130,
+    "money": 85,
+    "battlename": "La Momie",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 200,
+        "attaque": 43,
+        "defense": 24,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Orcs",
+    "type": "hostile",
+    "experience": 155,
+    "money": 95,
+    "battlename": "L'Orcs des Sables",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 240,
+        "attaque": 50,
+        "defense": 30,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Maraudeurs",
+    "type": "hostile",
+    "experience": 200,
+    "money": 130,
+    "battlename": "[BOSS] Le Maraudeur Royal",
+    "zone": "Désert",
+    "attributs": {
+        "hp": 350,
+        "attaque": 75,
+        "defense": 50,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Salamandre",
+    "type": "hostile",
+    "experience": 140,
+    "money": 90,
+    "battlename": "La Salamandre",
+    "zone": "Volcan",
+    "attributs": {
+        "hp": 230,
+        "attaque": 45,
+        "defense": 28,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Nécromantien",
+    "type": "hostile",
+    "experience": 155,
+    "money": 110,
+    "battlename": "La Nécromantien",
+    "zone": "Volcan",
+    "attributs": {
+        "hp": 260,
+        "attaque": 55,
+        "defense": 33,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Ange",
+    "type": "hostile",
+    "experience": 170,
+    "money": 115,
+    "battlename": "L'Ange Déchu",
+    "zone": "Volcan",
+    "attributs": {
+        "hp": 290,
+        "attaque": 57,
+        "defense": 36,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Minotaure",
+    "type": "hostile",
+    "experience": 200,
+    "money": 130,
+    "battlename": "Le Minotaure",
+    "zone": "Volcan",
+    "attributs": {
+        "hp": 340,
+        "attaque": 64,
+        "defense": 40,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  },
+  {
+    "name": "Démon",
+    "type": "hostile",
+    "experience": 350,
+    "money": 200,
+    "battlename": "Le Démon",
+    "zone": "Volcan",
+    "attributs": {
+        "hp": 500,
+        "attaque": 80,
+        "defense": 75,
+        "esprit": 0,
+        "inteligence": 0
+    }
+  }
+]
