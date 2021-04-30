@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Guerrier",
+    "icon": "https://cdn.discordapp.com/attachments/795758820491526234/813043092055130122/dam7amq-3975f7d6-b49e-4159-b7b3-a229e2610566.png",
+    "description": "Depuis que la guerre fait rage, des héros de toutes races ont cherché à maîtriser l’art du combat. Les guerriers combinent force, autorité et maîtrise des armes et des armures pour causer des ravages dans des combats épiques.",
+    "attributs": {
+        "hp": 50,
+        "attaque": 1,
+        "defense": 1,
+        "esprit": 1,
+        "inteligence": 1
+    }
+  },
+  {
+    "name": "Tank",
+    "icon": "https://cdn.discordapp.com/attachments/795758820491526234/813043373665288232/978cc772e5073bcc8a3f798beb36e360.png",
+    "description": "Le Tank observe fidèlement ces règles : protéger le faible, faire régner la justice et vaincre le mal jusque dans les recoins les plus sombres de ce monde",
+    "attributs": {
+        "hp": 50,
+        "attaque": 1,
+        "defense": 1,
+        "esprit": 1,
+        "inteligence": 1
+    }
+  },
+  {
+    "name": "Mage",
+    "icon": "https://cdn.discordapp.com/attachments/795758820491526234/813043489196998676/latest.png",
+    "description": "Les étudiants les plus intelligents et les plus disciplinés peuvent envisager une carrière de mage. Comme la magie des arcanes que manipulent les mages est à la fois puissante et dangereuse, elle n’est enseignée qu’à ceux qui la pratiquent avec respect et assiduité.",
+    "attributs": {
+        "hp": 50,
+        "attaque": 1,
+        "defense": 1,
+        "esprit": 1,
+        "inteligence": 1
+    }
+  },
+  {
+    "name": "Clerc",
+    "icon": "https://cdn.discordapp.com/attachments/795758820491526234/813043596210995220/latest.png",
+    "description": "C’est au spirituel que les prêtres ont consacré leur vie et c’est en étant au service des autres que leurs actes traduisent la force de leur foi.",
+    "attributs": {
+        "hp": 50,
+        "attaque": 1,
+        "defense": 1,
+        "esprit": 1,
+        "inteligence": 1
+    }
+  }
+]
