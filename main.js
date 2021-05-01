@@ -1,7 +1,10 @@
 const { Client, Collection } = require('discord.js');
 const { loadCommands,  loadEvents } = require("./util/loader");
 
-const client = new Client();
+const client = new Client({
+              disableMentions: "everyone"
+
+});
 require("./util/functions")(client);
 client.config = require("./config")
 client.mongoose = require("./util/mongoose");
