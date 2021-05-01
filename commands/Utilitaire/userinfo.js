@@ -2,16 +2,15 @@ const { MessageEmbed } = require("discord.js");
 const moment = require("moment");
 
 module.exports.run = (client, message, args, userInfo) => {
-   let member = message.member;
-   if (args[0]) member = message.guild.member(message.mentions.users.first());
-   let user = member.user;
-  
-  const embed = new MessageEmbed()
-    .setTitle(`**${member.user.tag}**`, message.author.avatarURL())
-    .setColor('B4E0E0')
-    .setThumbnail(user.displayAvatarURL())
-    .addFields(
-      {name: "📄 **Surnom**", value: `${!member.nickname ? 'Aucun Surnom' : `${member.nickname}`}`, inline: true},
+        let member = message.member;
+        if (args[0]) member = message.mentions.members.first() ? message.mentions.members.first() : message.guild.members.cache.get(args[0]) ? message.guild.members.cache.get(args[0]) : null;
+        let user = member.user;
+
+        const embed = new MessageEmbed()
+            .setTitle(`**${member.user.tag}**`, message.author.avatarURL())
+            .setColor('B4E0E0')
+            .setThumbnail(user.displayAvatarURL())
+            .addFields({ name: "📄 **Surnom**", value: `${!member.nickname ? 'Aucun Surnom' : `${member.nickname}`}`, inline: true},
       {name: "🤖 **Bot**", value: `${user.bot ? 'Cet Utilisateur est un Bot' : 'Cet Utilisateur n\'est pas un Bot'}`, inline: true},
       {name: "🆔 **ID**", value: `${member.id}`, inline: true},
       {name: "🕐 **Compte Crée le**", value: `${moment(user.createdAt).format('\`DD/MM/YYYY | hh:mm\`')}`, inline: true},
