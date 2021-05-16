@@ -37,7 +37,7 @@ module.exports.help = {
   isUserAdmin: false,
   permissions: false,
   permission: 'Niveau 0 (Aucun)',
-  type: '',
+  permissionType: '',
   args: false,
   profile: false
 };

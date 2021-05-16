@@ -24,9 +24,9 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 .setFooter (`${member}`, message.author.avatarURL());
             
-                client.channels.cache.get('ID DU SALON').send(Eventembed).then(async m => {
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
+                client.channels.cache.get('764182015523553310').send(Eventembed).then(async m => {
+                    m.react(message.guild.emojis.cache.get('818814096417095710'))
+                    m.react(message.guild.emojis.cache.get('818814097184653312'))
                 })
                 await message.channel.bulkDelete(messages)
             }
@@ -38,9 +38,9 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 .setFooter (`${member}`, message.author.avatarURL());
             
-                client.channels.cache.get('ID DU SALON').send(Botembed).then(async m => {
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
+                client.channels.cache.get('764182015523553310').send(Botembed).then(async m => {
+                    m.react(message.guild.emojis.cache.get('818814096417095710'))
+                    m.react(message.guild.emojis.cache.get('818814097184653312'))
                 })
                 await message.channel.bulkDelete(messages)
             }
@@ -52,9 +52,9 @@ module.exports.run = async (client, message, args) => {
                 .setTimestamp()
                 .setFooter (`${member}`, message.author.avatarURL());
             
-                client.channels.cache.get('ID DU SALON').send(Serveurembed).then(async m => {
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
-                    m.react(message.guild.emojis.cache.get('ID DE L\'EMOTE'))
+                client.channels.cache.get('764182015523553310').send(Serveurembed).then(async m => {
+                    m.react(message.guild.emojis.cache.get('818814096417095710'))
+                    m.react(message.guild.emojis.cache.get('818814097184653312'))
                 })
                 await message.channel.bulkDelete(messages)
             };
@@ -75,7 +75,7 @@ module.exports.help = {
     isUserAdmin: false,
     permissions: false,
     permission: 'Niveau 0 (Aucun)',
-    type: '',
+    permissionType: '',
     args: true,
     profile: false
   };

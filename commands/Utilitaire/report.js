@@ -24,7 +24,7 @@ module.exports.run = async (client, message, args) => {
               .setTimestamp()
               .setFooter (`${member}`, message.author.avatarURL());
           
-              client.channels.cache.get('ID DU SALON').send(Eventembed)
+              client.channels.cache.get('764182015523553310').send(Eventembed)
               await message.channel.bulkDelete(messages)
           }
           else if (userEntry.first().content.toLowerCase() === "bot") {
@@ -35,7 +35,7 @@ module.exports.run = async (client, message, args) => {
               .setTimestamp()
               .setFooter (`${member}`, message.author.avatarURL());
           
-              client.channels.cache.get('ID DU SALON').send(Botembed)
+              client.channels.cache.get('764182015523553310').send(Botembed)
               await message.channel.bulkDelete(messages)
           };
       } catch {
@@ -54,7 +54,7 @@ module.exports.help = {
   isUserAdmin: false,
   permissions: false,
   permission: 'Niveau 0 (Aucun)',
-  type: '',
+  permissionType: '',
   args: true,
   profile: false
 };
