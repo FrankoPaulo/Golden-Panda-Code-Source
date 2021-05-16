@@ -8,22 +8,15 @@ module.exports.run = async (client, message, args) => {
   let moderator = message.author.username
   const reason = (args.splice(2).join(' ') || "Aucune Raison Spécifiée");
 
-  const error = new MessageEmbed()
-  .setTitle("<:Warning:766722345280208927> **Erreur de Permission**")
-  .setColor("#870606")
-  .setDescription(`**Vous avez pas les permissions requises pour effectuer la commande \`Tempmute\`**\n\n**Niveau/Type de Permission Requises :** Niveau 2 (Modérateur/Animateur/Chef Gestion)\n**Permission Requise :** \`MANAGE_ROLES\``)
-  .setTimestamp()
-  .setFooter(message.author.username, message.author.avatarURL())
 
-  const error3 = new MessageEmbed()
-  .setTitle("<:Warning:766722345280208927> **Erreur de Mention**")
+  const error = new MessageEmbed()
+  .setTitle("<:Warning:840521136701833226> **Erreur de Mention**")
   .setColor("#870606")
   .setDescription(`**Syntaxe Incorrecte ! Vous devez mentionner un Utilisateur !**`)
   .setTimestamp()
   .setFooter(message.author.username, message.author.avatarURL())
 
-  if (!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(error)
-  if (!user) message.channel.send(error3)
+  if (!user) message.channel.send(error)
 
   if (!muterole) {
     muterole = await message.guild.roles.create({
@@ -44,27 +37,28 @@ module.exports.run = async (client, message, args) => {
   }
   
 
-  if (user.roles.cache.has(muterole.id)) return message.channel.send("<:Warning:766722345280208927> **Tu peux pas mute un utilisateur déjà mute !**")
+  if (user.roles.cache.has(muterole.id)) return message.channel.send("<:Warning:840521136701833226> **Tu peux pas mute un utilisateur déjà mute !**")
   await user.roles.add(muterole.id);
   message.channel.send(`**${user.user.username} a été mute pendant une durée de ${ms(ms(muteTime))}**`)
 
   setTimeout(() => {
-    message.guild.member(user.id).unban
+    user.roles.remove(muterole.id);
     message.channel.send(`**${user.user.username} a été démute**`)
   }, ms(muteTime));
 
 
   const Muteembed = new MessageEmbed()
-  .setTitle(`Utilisateur Ban : ${user.user.username} (${user.id})`)
-  .setAuthor("Ban Log")
-  .setColor("#B22222")
-  .setDescription(`**Modérateur :** ${moderator}\n**Temps :** ${ms(ms(muteTime))}\n**Raison :** ${reason}`)
-  .setTimestamp()
-  .setFooter(message.author.username, message.author.avatarURL());
+    .setTitle(`Utilisateur Mute : ${user.user.username} (${user.id})`)
+    .setAuthor("Mute Log")
+    .setColor("#B22222")
+    .setDescription(`**Utilisateur Mute :** ${user.user.username} (${user.id})\n**Modérateur :** ${moderator}\n**Temps:** ${muteTime}\n**Raison :** ${reason}`)
+    .setTimestamp()
+    .setFooter(message.author.username, message.author.avatarURL());
 
-client.channels.cache.get('ID DU SALON').send(Muteembed)
-user.user.send(`<:Warning:766722345280208927> **Vous été mute sur le serveur** ***${message.guild.name}***`)
-    message.author.send(`**${user.user.username} a bien été mute sur le serveur **`)
+  // 825063634039341066 - 768200404521320468
+  client.channels.cache.get('825063634039341066').send(Muteembed)
+  if (!user.user.bot) user.user.send(`<:Warning:840521136701833226> **Vous été mute sur le serveur** ***${message.guild.name}***`)
+  message.author.send(`**${user.user.username} a bien été mute sur le serveur **`)
 
 };
 
@@ -78,7 +72,7 @@ module.exports.help = {
   isUserAdmin: true,
   permissions: true,
   permission: 'Niveau 2 (Modérateur/Animateur/Chef Gestion)',
-  type: 'MANAGE_ROLES',
+  permissionType: 'MANAGE_ROLES',
   args: true,
   profile: false
 };
