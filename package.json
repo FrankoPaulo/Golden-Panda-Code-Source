@@ -1,13 +1,13 @@
 {
   "name": "goldenpanda",
-  "version": "BêtaDev 21.11",
+  "version": "BêtaDev 21.12",
   "description": "Le bot pour le serveur Event Game",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "FrankoPaulo",
-  "license": "MIT",
+  "license": "GPL",
   "dependencies": {
     "canvas": "^2.7.0",
     "discord.js": "^12.3.1",
