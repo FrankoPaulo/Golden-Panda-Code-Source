@@ -67,7 +67,7 @@ Voici la liste des travaux qu'il reste actuellement à faire sur le bot.
     
 ## Versions
 
-- Version du Bot : __BêtaDev 21.11__
+- Version du Bot : __BêtaDev 21.12__
 - Version Discord.js : __12.3.1__
 
 ## License
