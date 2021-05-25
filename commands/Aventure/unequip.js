@@ -7,10 +7,11 @@ module.exports.run = async (client, message, args, userInfo) => {
   const userEquipments = userInfo.equipments;
   const userInventory = userInfo.inventory;
 
+  if (userInventory.length > 15) return message.channel.send(`<:Warning:840521136701833226> **${message.member} votre inventaire est plein !**`)
   if (userInfo.isBattle === true) return message.channel.send(`${message.member} **Tu peux pas te déséquipper en combat !**`);
   const itemInfoPosition =  getItemInfo.map(e => e.name).indexOf(capitalize(q));
 
-  if (userEquipments[getItemInfo[itemInfoPosition].type] !== capitalize(q)) return message.channel.send(`:warning: **${author} vous n'avez pas cet objet d'équipé !**`)
+  if (userEquipments[getItemInfo[itemInfoPosition].type] !== capitalize(q)) return message.channel.send(`<:Warning:840521136701833226> **${author} vous n'avez pas cet objet d'équipé !**`)
 
   message.channel.send(`**${author} vous avez bien déséquipé ${q}**`)
   userEquipments[getItemInfo[itemInfoPosition].type] = "Aucun"
@@ -31,7 +32,7 @@ module.exports.help = {
   isUserAdmin: false,
   permissions: false,
   permission: 'Niveau 0 (Aucun)',
-  type: '',
+  permissionType: '',
   args: true,
   profile: true
 };
