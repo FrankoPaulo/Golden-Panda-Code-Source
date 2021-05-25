@@ -1,3 +1,5 @@
+//Idée Design par Paudb09, merci à lui !
+
 const { MessageEmbed } = require("discord.js");
 const moment = require("moment");
 
