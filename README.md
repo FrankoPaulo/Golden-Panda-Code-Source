@@ -1,14 +1,14 @@
 # Golden Panda
 
 ### Ajout Récent
-* Loot Update V.2
-  * Ajout des Loots dans la Forêt
-  * Ajout du Shop des Plaines
-  * Equilibrage des Statistiques (Armes, Armures, Ennemis, ect...)
+* BêtaDev 21.13
+  * Optimisation du Code
+  * Ajout d'une limite D'Inventaire
+  * Equilibrage des ennemis
   * Fix de la Plupart des Bugs
-  * Modification des Certaines Commandes
   * Et d'autre...  
-  
+
+Job Update Coming Soon !
 Pour avoir plus d'information. Veuillez vous rendre sur le __*[Serveur de Support](https://discord.gg/uC4mvtBFct)*__
 
 ------
@@ -41,7 +41,6 @@ Voici la liste des travaux qu'il reste actuellement à faire sur le bot.
   * Finir la Loot Update
     * Ajouter les Loots dans le Désert et Volcan
     * Ajouter les Shop dans la Forêt, le Désert et le Volcan
-    * Faire un Equilibrages des Ennemis à Venir
 * A Venir :
   * Changements :
     * Système de Bataille
