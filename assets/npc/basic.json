@@ -1,63 +1,108 @@
 [
   {
     "name": "Noob",
-    "type": "hostile",
-    "experience": 2,
-    "money": 1,
     "battlename": "Le No0b",
     "zone": "Spawn",
+    "type": "hostile",
+    "minXp": 1,
+    "maxXp": 10,
+    "minMoney": 1,
+    "maxMoney": 3,
+    "minLootNumber": 0,
+    "maxLootNumber": 50,
     "attributs": {
         "hp": 10,
         "attaque": 1.5,
         "defense": 0.5,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Tête de Noob",
+      "Dirt"
+    ]
   },
   {
     "name": "Bélier",
-    "type": "hostile",
-    "experience": 5,
-    "money": 2,
     "battlename": "Le Bélier",
     "zone": "Spawn",
+    "type": "hostile",
+    "minXp": 1,
+    "maxXp": 20,
+    "minMoney": 1,
+    "maxMoney": 5,
+    "minLootNumber": 0,
+    "maxLootNumber": 45,
     "attributs": {
         "hp": 20,
         "attaque": 4,
         "defense": 1,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Laine de Bélier",
+      "Langue de Bélier"
+    ]
   },
   {
     "name": "Livre",
-    "type": "hostile",
-    "experience": 8,
-    "money": 2,
     "battlename": "Le Livre de Sortilège",
     "zone": "Spawn",
+    "type": "hostile",
+    "minXp": 2,
+    "maxXp": 24,
+    "minMoney": 1,
+    "maxMoney": 6,
+    "minLootNumber": 21,
+    "maxLootNumber": 46,
+    "minUnLootNumber": 0,
+    "maxUnLootNumber": 20,
     "attributs": {
         "hp": 24,
         "attaque": 7,
         "defense": 2,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Livre",
+      "Bout de Papier",
+      "Bout de Parchemin"
+    ],
+    "uncommonLoot": [
+      "Parchemin"
+    ]
   },
   {
     "name": "SDF",
-    "type": "hostile",
-    "experience": 15,
-    "money": 3,
     "battlename": "[BOSS] Le SDF",
     "zone": "Spawn",
+    "type": "boss",
+    "eventcoins": 2,
+    "minXp": 10,
+    "maxXp": 40,
+    "minMoney": 5,
+    "maxMoney": 10,
+    "minLootNumber": 21,
+    "maxLootNumber": 46,
+    "minUnLootNumber": 0,
+    "maxUnLootNumber": 20,
     "attributs": {
         "hp": 35,
         "attaque": 9,
         "defense": 3,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Tissue",
+      "Bout de Tissue",
+      "Bouteille de Vin"
+    ],
+    "uncommonLoot": [
+      "Vieille Piece"
+    ]
   },
 
 
@@ -66,78 +111,150 @@
 
   {
     "name": "Mouton",
-    "type": "hostile",
-    "experience": 10,
-    "money": 3,
     "battlename": "Le Mouton Fou",
     "zone": "Plaine",
+    "type": "hostile",
+    "minXp": 7,
+    "maxXp": 35,
+    "minMoney": 3,
+    "maxMoney": 6,
+    "minLootNumber": 11,
+    "maxLootNumber": 41,
+    "minUnLootNumber": 0,
+    "maxUnLootNumber": 10,
     "attributs": {
         "hp": 30,
         "attaque": 21,
         "defense": 3,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Bave de Mouton",
+      "Viande Crue"
+    ],
+    "uncommonLoot": [
+      "Laine de Mouton"
+    ]
   },
   {
     "name": "Voleur",
-    "type": "hostile",
-    "experience": 18,
-    "money": 7,
     "battlename": "Le Voleur",
     "zone": "Plaine",
+    "type": "hostile",
+    "minXp": 10,
+    "maxXp": 43,
+    "minMoney": 5,
+    "maxMoney": 12,
+    "minLootNumber": 17,
+    "maxLootNumber": 37,
+    "minUnLootNumber": 6,
+    "maxUnLootNumber": 16,
+    "minRalootNumber": 0,
+    "maxRalootNumber": 5,
     "attributs": {
         "hp": 55,
         "attaque": 31,
         "defense": 11,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Poison",
+      "Sac de Pièce",
+      "Fumigènes"
+    ],
+    "uncommonLoot": [
+      "Dague de Voleur",
+      "Capuche du Voleur",
+      "Manteau du Voleur"
+    ],
+    "rareLoot": [
+      "Gros Sac de Pièce"
+    ]
   },
   {
     "name": "Aventurier",
-    "type": "hostile",
-    "experience": 24,
-    "money": 12,
     "battlename": "L'Aventurier Farouche",
     "zone": "Plaine",
+    "type": "hostile",
+    "minXp": 25,
+    "maxXp": 60,
+    "minMoney": 11,
+    "maxMoney": 25,
+    "minLootNumber": 8,
+    "maxLootNumber": 23,
+    "minUnLootNumber": 0,
+    "maxUnLootNumber": 7,
     "attributs": {
         "hp": 80,
         "attaque": 33,
         "defense": 18,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Lunettes D'Explorateur",
+      "Minerai de Fer"
+    ],
+    "uncommonLoot": [
+      "Bouclier Usé",
+      "Ceinture du Savoir",
+      "Bottes Usées"
+    ]
   },
   {
     "name": "Bandit",
-    "type": "hostile",
-    "experience": 30,
-    "money": 20,
     "battlename": "Le Bandit",
     "zone": "Plaine",
+    "type": "hostile",
+    "minXp": 35,
+    "maxXp": 70,
+    "minMoney": 15,
+    "maxMoney": 20,
+    "minLootNumber": 6,
+    "maxLootNumber": 16,
+    "minUnLootNumber": 0,
+    "maxUnLootNumber": 5,
     "attributs": {
         "hp": 90,
         "attaque": 36,
         "defense": 21,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Bout de Bois",
+      "Charbon",
+      "Cuir de Mouton",
+      "Sac de Pomme"
+    ],
+    "uncommonLoot": [
+      "Sabre Rouillé"
+    ]
   },
   {
     "name": "Taureau",
-    "type": "hostile",
-    "experience": 50,
-    "money": 25,
     "battlename": "[BOSS] Le Taureau Sauvage",
     "zone": "Plaine",
+    "type": "boss",
+    "eventcoins": 5,
+    "minXp": 50,
+    "maxXp": 100,
+    "minMoney": 18,
+    "maxMoney": 35,
+    "minRaLootNumber": 0,
+    "maxRaLootNumber": 3,
     "attributs": {
         "hp": 100,
         "attaque": 40.5,
         "defense": 26,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "rareLoot": [
+      "Lame du Taureau"
+    ]
   },
 
 
@@ -146,33 +263,60 @@
 
   {
     "name": "Sanglier",
-    "type": "hostile",
-    "experience": 35,
-    "money": 20,
     "battlename": "Le Sanglier Volant",
     "zone": "Forêt",
+    "type": "hostile",
+    "minXp": 30,
+    "maxXp": 70,
+    "minMoney": 10,
+    "maxMoney": 30,
+    "minLootNumber": 11,
+    "maxLootNumber": 31,
+    "minUnLootNumber": 10,
+    "maxUnLootNumber": 0,
     "attributs": {
         "hp": 75,
         "attaque": 32,
         "defense": 20,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Aile de Cochon Volant",
+      "Griffe Pointu",
+      "Queue de Cochon Volant"
+    ],
+    "uncommonLoot": [
+      "Crâne de Cochon"
+    ]
   },
   {
     "name": "Champignon",
-    "type": "hostile",
-    "experience": 40,
-    "money": 25,
     "battlename": "Le Champignon Mutant",
     "zone": "Forêt",
+    "type": "hostile",
+    "minXp": 65,
+    "maxXp": 120,
+    "minMoney": 32,
+    "maxMoney": 50,
+    "minLootNumber": 16,
+    "maxLootNumber": 31,
+    "minUnLootNumber": 15,
+    "maxUnLootNumber": 0,
     "attributs": {
         "hp": 90,
         "attaque": 35,
         "defense": 23,
         "esprit": 0,
         "inteligence": 0
-    }
+    },
+    "loot": [
+      "Champignon Acide",
+      "Spore Magique"
+    ],
+    "uncommonLoot": [
+      "Crâne de Cochon"
+    ]
   },
   {
     "name": "Brigant",
