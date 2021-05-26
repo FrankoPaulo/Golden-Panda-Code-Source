@@ -393,7 +393,7 @@
     "canBuy": false,
     "canSell": true,
     "prixVente": 25,
-    "lootChance": "30% de Chance",
+    "lootChance": "45% de Chance",
     "lootFrom": "Bélier"
   },
   {
@@ -407,7 +407,7 @@
     "canBuy": false,
     "canSell": true,
     "prixVente": 36,
-    "lootChance": "30% de Chance",
+    "lootChance": "45% de Chance",
     "lootFrom": "Bélier"
   },
   {
@@ -747,9 +747,10 @@
     "canSell": true,
     "zone": "Plaine",
     "rarity": ":green_circle: (Peu Commun)",
-    "prix": 1000,
-    "prixAchat": 1000,
-    "prixVente": 500
+    "prix": 5000,
+    "prixAchat": 5000,
+    "prixVente": 2500,
+    "requireLevel": 6
   },
   {
     "name": "Laine de Mouton",
@@ -1075,7 +1076,7 @@
   {
     "name": "Aile de Cochon Volant",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837361136294428753/104733.png",
     "color": "#FFFFFF",
     "description": "La gastronomie valide le goût minicieux de ces ailes",
     "item": "Aile de Cochon Volant",
@@ -1089,7 +1090,7 @@
   {
     "name": "Griffe Pointu",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837361315710369802/15830.png",
     "color": "#FFFFFF",
     "description": "La pointe de cette griffe peut couper du métal",
     "item": "Griffe Pointu",
@@ -1103,7 +1104,7 @@
   {
     "name": "Queue de Cochon Volant",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837361573994692638/65579.png",
     "color": "#FFFFFF",
     "description": "Pas de blague sur le nom svp",
     "item": "Queue de Cochon Volant",
@@ -1117,7 +1118,7 @@
   {
     "name": "Crâne de Cochon Volant",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837361882481426512/47091.png",
     "color": "#FFFFFF",
     "description": "Tuer ou être Tué ? Tel est la question !",
     "item": "Crâne de Cochon Volant",
@@ -1131,7 +1132,7 @@
   {
     "name": "Champignon Acide",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837363068228075540/15390.png",
     "color": "#FFFFFF",
     "description": "Attention à ne pas toucher son chapeau",
     "item": "Champignon Acide",
@@ -1139,21 +1140,21 @@
     "canBuy": false,
     "canSell": true,
     "prixVente": 275,
-    "lootChance": "30% de Chance",
+    "lootChance": "25% de Chance",
     "lootFrom": "Champignon"
   },
   {
     "name": "Spore Magique",
     "type": "Loot",
-    "icon": null,
+    "icon": "https://cdn.discordapp.com/attachments/814840408978751488/837363165016621166/15050.png",
     "color": "#FFFFFF",
-    "description": "Autrement appelé du... Sporme",
+    "description": "Autrement appelé du... Sporme (oui, même les plantes en produisent)",
     "item": "Spore Magique",
     "rarity": ":white_circle: (Commun)",
     "canBuy": false,
     "canSell": true,
     "prixVente": 298,
-    "lootChance": "30% de Chance",
+    "lootChance": "25% de Chance",
     "lootFrom": "Champignon"
   }
 ]
