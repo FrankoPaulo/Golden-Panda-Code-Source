@@ -15,7 +15,7 @@ Pour avoir plus d'information. Veuillez vous rendre sur le __*[Serveur de Suppor
 
 
 Golden Panda est un Bot développé par __*[FrankoPaulo](https://github.com/FrankoPaulo)*__ en utilisant la librairie __*[Discord.js](https://discord.js.org/#/)*__ pour le 
-serveur discord __*[Event Games](https://discord.gg/55bTTYunK3)*__. Le bot est toujours en développement et celui-ci n'est disponible que sur ce serveur-ci !
+serveur discord __*[Event Games](https://discord.gg/55bTTYunK3)*__ (Serveur en Refonte !). Le bot est toujours en développement et celui-ci n'est disponible que sur ce serveur-ci !
 
 ## Fonctionnalité
 Le bot en soit est comme la plupart des bots multi-fonctions. Mais voici les fonctions dont dispose ce bot.
