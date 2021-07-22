@@ -31,8 +31,6 @@ module.exports = async client => {
     return data.users[position];
   };
 
-  //TODO: Refaire la DataBase ainsi que le stockage de données - Adapter le code au multi-server
-
 
 
 
@@ -43,6 +41,7 @@ module.exports = async client => {
         $push: {
           users: {
             id: member.id,
+            rpgID: randomRPGID,
             attributs: {},
             equipments: {
               "Mh": "Aucun",
@@ -56,19 +55,27 @@ module.exports = async client => {
             inventory: [],
             kills: 0,
             deaths: 0,
-            isBattle: false,
             experience: 0,
             level: 1,
             money: 0,
-            eventcoins: 0,
+            goldencoins: 0,
             class: "",
-            zone: "Spawn",
-            warnlevel: 0
+            zone: "",
+            states: {
+              gameOver: false,
+              isBattling: false,
+              isDead: false,
+              isTraveling: false,
+              isWorking: false,
+              hasLeveledUp: false,
+              hasQuest: false,
+              hasWorked: false
+            },
           }
         }
       }
     )
-      .then(console.log("Nouvelle Utilisateur Enregistré !"))
+      .then(console.log("Nouveau Profil Crée !"))
   };
 
   client.updateUserInfo = (member, options = {}) => {
@@ -82,6 +89,8 @@ module.exports = async client => {
   client.createMissingInfoOnUser = (member, missingInfo, guild = {Guild}) => {
     guild.updateOne({ "users.id": member.id }, { $set: missingInfo }).then();
   };
+
+
 
 
 };
