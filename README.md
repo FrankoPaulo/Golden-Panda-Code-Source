@@ -1,12 +1,9 @@
 # Golden Panda
 
 ### Ajout Récent
-* BêtaDev 21.13
+* BêtaDev 21.14
   * Optimisation du Code
-  * Ajout d'une limite D'Inventaire
-  * Equilibrage des ennemis
-  * Fix de la Plupart des Bugs
-  * Et d'autre...  
+  * Fix de Bugs
 
 Job Update Coming Soon !
 Pour avoir plus d'information. Veuillez vous rendre sur le __*[Serveur de Support](https://discord.gg/uC4mvtBFct)*__
