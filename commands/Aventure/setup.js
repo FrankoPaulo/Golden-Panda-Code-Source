@@ -1,7 +1,9 @@
-const { Guild, attributs, battle, experience, inventories, money, user } = require("../../models/index");
+const { Guild } = require("../../models/index");
+// const { MessageButton, MessageActionRow } = require("discord-buttons")
 const classes = require("../../assets/rpg/classes.json");
 
 module.exports.run = async (client, message, args, userInfo) => {
+  const settings = await client.getGuild(message.guild);
   if (userInfo && userInfo.class !== '') return message.channel.send(`<:Warning:840521136701833226> **${message.author.username} Tu Possède déjà une Fiche D'Aventure !**`);
 
   const q = args.join(" ");
@@ -20,84 +22,16 @@ module.exports.run = async (client, message, args, userInfo) => {
       });
 
       if (userEntry.first().content.toLowerCase() === "oui") {
-        message.channel.send(`**Vous venez d'entrer dans le monde de Rasgart en temps que \`${classe.name}\` !**\n**Vous pouvez maintenant check votre profil avec la commande \`${client.config.PREFIX}profile\`**\n\n**Note :** Tant qu'un nouveau système de bataille n'est pas implémenté ou que les propriétés de l'intelligence et l'esprit apparaîssent, toute les classes ont les mêmes stats !`)
+        message.channel.send(`**Vous venez d'entrer dans le monde de Rasgart en temps que \`${classe.name}\` !**\n**Vous pouvez maintenant check votre profil avec la commande \`${settings.prefix}profile\`**\n\n**Note :** Tant qu'un nouveau système de bataille n'est pas implémenté ou que les propriétés de l'intelligence et l'esprit apparaîssent, toute les classes ont les mêmes stats !`)
         if (!userInfo) {
-          // attributs.updateOne(
-          //   { guildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       attributs: {}
-          //     }
-          //   }
-          // ),
-          // battle.updateOne(
-          //   { GuildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       kills: 0,
-          //       deaths: 0,
-          //       isBattle: false
-          //     }
-          //   }
-          // ),
-          // experience.updateOne(
-          //   { guildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       experience: 0,
-          //       level: 1
-          //     }
-          //   }
-          // ),
-          // inventories.updateOne(
-          //   { guildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       inventaire: [],
-          //       equipement: {
-          //         "Mh": "Aucun",
-          //         "Oh": "Aucun",
-          //         "Helmet": "Aucun",
-          //         "Chest": "Aucun",
-          //         "Gloves": "Aucun",
-          //         "Legs": "Aucun",
-          //         "Boots": "Aucun"
-          //       }
-          //     }
-          //   }
-          // ),
-          // money.updateOne(
-          //   { guildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       money: 0,
-          //       eventcoins: 0
-          //     }
-          //   }
-          // ),
-          // user.updateOne(
-          //   { guildID: message.guild.id },
-          //   {
-          //     $push: {
-          //       id: member.id,
-          //       class: "",
-          //       zone: "Spawn",
-          //       warnlevel: 0
-          //     }
-          //   }
-          // )
 
           Guild.updateOne(
             { guildID: message.guild.id },
             {
               $push: {
-                users: {
-                  id: member.id,
+                rpgData: {
+                  id: message.member.id,
+                  rpgID: Math.floor(Math.random() * 9999) * 0001,
                   attributs: {},
                   equipments: {
                     "Mh": "Aucun",
@@ -111,22 +45,31 @@ module.exports.run = async (client, message, args, userInfo) => {
                   inventory: [],
                   kills: 0,
                   deaths: 0,
-                  isBattle: false,
                   experience: 0,
                   level: 1,
                   money: 0,
-                  eventcoins: 0,
+                  goldencoins: 0,
                   class: "",
-                  zone: "Spawn",
-                  warnlevel: 0
+                  zone: "",
+                  states: {
+                    gameOver: false,
+                    isBattling: false,
+                    isDead: false,
+                    isTraveling: false,
+                    isWorking: false,
+                    hasLeveledUp: false,
+                    hasQuest: false,
+                    hasWorked: false
+                  },
                 }
-              }
+              },
             }
           )
         } else {
           client.updateUserInfo(message.member, {
             "users.$.class": classe.name,
-            "users.$.attributs": classe.attributs
+            "users.$.attributs": classe.attributs,
+            "users.$.zone": "Spawn"
           });
         }
 
@@ -134,11 +77,44 @@ module.exports.run = async (client, message, args, userInfo) => {
         message.channel.send(`:man_mage: **Je vois... tu n'est pas sûr de l'existance que tu veux... Hé bien si tu n'est pas sûr, reviens me voir plus tard quand tu te sera décidé !**`)
       }
     } catch (e) {
-      message.channel.send(":man_mage: **Tu ne sais quoi prendre Aventurier ? Ce n'est pas grave... Reviens quand tu est sûr de ce que tu veux devenir !**")
+      message.channel.send(":man_mage: **Tu ne sais quoi prendre Aventurier ? Ce n'est pas grave... Reviens quand tu est sûr de ce que tu veux devenir !**");
+      console.log(e);
     }
 
   } else {
-    message.channel.send(`:man_mage: **Bonjour Aventurier !**\n\n**Bienvenue dans le monde de Rasgart ! Ce monde est composé de beaucoup de choses. Mais avant tout, tu dois choisir qui veux tu être dans ce monde...** (\`${client.config.PREFIX}setup [nom de la classe])\`\n\n***Choix Possibles :*** \`${classes.map(e => `${e.name}`).join(" ・ ")}\``);
+  // const warrior = new MessageButton()
+  //   .setStyle("gray")
+  //   .setLabel("Guerrier")
+  //   .setEmoji('⚔️')
+  //   .setID("warrior_setup")
+
+  // const tank = new MessageButton()
+  //   .setStyle("gray")
+  //   .setLabel("Tank")
+  //   .setEmoji('🛡️')
+  //   .setID("tank_setup")
+
+  // const mage = new MessageButton()
+  //   .setStyle("gray")
+  //   .setLabel("Mage")
+  //   .setEmoji('🧙')
+  //   .setID("mage_setup")
+
+  // const clerc = new MessageButton()
+  //   .setStyle("gray")
+  //   .setLabel("Clerc")
+  //   .setEmoji('💓')
+  //   .setID("clerc_setup")
+
+  // const classRow = new MessageActionRow()
+  //   .addComponent(warrior)
+  //   .addComponent(tank)
+  //   .addComponent(mage)
+  //   .addComponent(clerc)
+
+    // message.channel.send(`:man_mage: **Bonjour Aventurier !**\n\n**Bienvenue dans le monde de Rasgart ! Ce monde est composé de beaucoup de choses. Mais avant tout, tu dois choisir qui veux tu être dans ce monde...**`, { component: classRow })
+
+    message.channel.send(`:man_mage: **Bonjour Aventurier !**\n\n**Bienvenue dans le monde de Rasgart ! Ce monde est composé de beaucoup de choses. Mais avant tout, tu dois choisir qui veux tu être dans ce monde...** (\`${settings.prefix}setup [nom de la classe])\`\n\n***Choix Possibles :*** \`${classes.map(e => `${e.name}`).join(" ・ ")}\``)
   }
 };
 
