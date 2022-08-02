@@ -1,3 +1,7 @@
+# Le bot est en refonte complète et sera définitivement privé. Le code ici n'est plus à jour étant donné qu'il s'agit de la v12 de discord.js !
+
+
+
 # Golden Panda
 
 ### Ajout Récent
